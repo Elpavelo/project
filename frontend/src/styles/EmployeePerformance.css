@@ -1,0 +1,102 @@
+/* src/components/EmployeePerformance.css */
+
+/* Base Styles */
+.performance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Typography */
+.title-primary {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: #4b5563;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form Styles */
+.form-container {
+  width: 100%;
+  max-width: 24rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.btn-link {
+  color: #2563eb;
+  background: none;
+  border: none;
+}
+
+/* Social Login */
+.social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Error and Result Styles */
+.error-message {
+  color: #dc2626;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.prediction-result {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .performance-container {
+    padding: 10px;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+}

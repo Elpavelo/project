@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: smote
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/chupati/smote
+Author: David N. Sanchez
+Author-email: dsanchez@dnsai.io
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.14.3)
+Requires-Dist: scikit-learn (>=0.19.1)
+
+UNKNOWN
+
+
