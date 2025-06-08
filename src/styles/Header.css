@@ -1,0 +1,46 @@
+/* src/styles/Header.css */
+.app-header {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-logo-link {
+  display: block;
+  text-decoration: none;
+}
+
+.header-logo {
+  height: 60px;
+  max-width: 100%;
+}
+
+.header-title {
+  margin-left: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0056b3;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-title {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+}

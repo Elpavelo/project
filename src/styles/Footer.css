@@ -1,0 +1,75 @@
+/* src/styles/Footer.css */
+.app-footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 40px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+    margin-right: 30px;
+  }
+  
+  .footer-logo-img {
+    height: 40px;
+  }
+  
+  .footer-content {
+    flex: 1;
+  }
+  
+  .footer-copyright {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-link {
+    color: #0056b3;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+  
+  .footer-link:hover {
+    color: #003d82;
+    text-decoration: underline;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    
+    .footer-nav {
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    .footer-link {
+      margin: 0 10px;
+      margin-bottom: 10px;
+    }
+  }

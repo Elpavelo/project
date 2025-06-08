@@ -1,0 +1,82 @@
+// LandingPage.js - Add meta viewport tag and box-sizing
+// In your index.html file (if not already present), add:
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+// Add this to your global CSS file or index.css:
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+// Changes for LandingPage.js
+// Replace the landing-container div with:
+<div className="landing-container">
+  <h1 className="landing-title">EMPLOYEE PERFORMANCE PREDICTION SYSTEM</h1>
+  <p className="landing-subtitle">WE ARE HAPPY HAVING YOU IN THIS OUR APP</p>
+  <div className="landing-buttons">
+    <button 
+      onClick={() => navigate('/login')} 
+      className="landing-btn landing-btn-primary"
+    >
+      Login
+    </button>
+    <button 
+      onClick={() => navigate('/signup')} 
+      className="landing-btn landing-btn-secondary"
+    >
+      SignUp
+    </button>
+  </div>
+  <p className="landing-subtitle mt-4">LET'S GET STARTED</p>
+</div>
+
+// PredictionPage.js - Update select and input elements for better touch interaction
+// Replace the select element with:
+<select
+  id="employer_name"
+  name="employer_name"
+  value={formData.employer_name}
+  onChange={handleChange}
+  className="prediction-input"
+  required
+  aria-label="Select Employer"
+>
+  <option value="">Select Employer</option>
+  {employers.map(employer => (
+    <option key={employer} value={employer}>{employer}</option>
+  ))}
+</select>
+
+// Update number inputs to be more touch-friendly:
+<input 
+  id="hours_worked"
+  type="number" 
+  name="hours_worked" 
+  placeholder="20-60"
+  value={formData.hours_worked}
+  onChange={handleChange}
+  className="prediction-input"
+  required 
+  min="1"
+  max="168"
+  inputMode="numeric"
+  pattern="[0-9]*"
+/>
+
+// LoginPage.js - Ensure form elements have proper sizing and spacing on small screens
+// Add this to your auth form wrapper for better spacing on small screens:
+<form onSubmit={handleLogin} className="auth-form" style={{ width: '100%' }}>
+  {/* existing form content */}
+</form>
+
+// SignupPage.js - Same adjustment for the signup form
+<form onSubmit={handleSubmit} className="auth-form" style={{ width: '100%' }}>
+  {/* existing form content */}
+</form>
